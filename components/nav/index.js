@@ -38,7 +38,7 @@ const Nav = () => {
         <ul>
           {links.map((link) => {
             return (
-              <li>
+              <li key={link.title}>
                 <Link href={link.href}>
                   <a className="subtitle">{link.title}</a>
                 </Link>

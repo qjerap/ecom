@@ -1,5 +1,5 @@
 @import "./mixins";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700&display=swap");
 
 html {
   font-family: "Manrope", sans-serif;
@@ -29,6 +29,7 @@ h1 {
   font-size: 5.6rem;
   letter-spacing: 2px;
   line-height: 5.8rem;
+  margin: 2.4rem 0;
 }
 h2 {
   font-size: 4rem;
@@ -70,7 +71,7 @@ h6 {
 }
 
 .body-text {
-  font-weight: 500;
+  font-weight: 200;
   font-size: 1.5rem;
   line-height: 2.5rem;
 }

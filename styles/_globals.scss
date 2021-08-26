@@ -35,6 +35,7 @@ li {
   cursor: pointer;
   padding: 0;
   transition: background-color 0.15s ease-in;
+  margin-top: 4rem;
 
   &:hover {
     background-color: var(--primary-400);
