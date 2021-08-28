@@ -22,6 +22,11 @@ li {
   margin: auto;
 }
 
+.section {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}
+
 .btn {
   width: 16rem;
   height: 4.8rem;
@@ -39,7 +44,6 @@ li {
 
   &:hover {
     background-color: var(--primary-400);
-    
   }
 
   &--2 {
@@ -55,7 +59,15 @@ li {
 
   &--3 {
     background-color: transparent;
-    color: var(--white-900);
+    color: var(--black-900-50);
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+
+    &:after {
+      content: url(../public/assets/shared/desktop/icon-arrow-right.svg);
+      margin-left: .75rem;
+    }
 
     &:hover {
       color: var(--primary-500);

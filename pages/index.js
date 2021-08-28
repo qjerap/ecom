@@ -14,7 +14,7 @@ import { loadState, saveState } from "../helper/localStorage";
 
 //Components
 import Header from "../components/header/home";
-
+import Categories from "../components/categories/index";
 
 export default function Home({ data }) {
   console.log(data);
@@ -39,27 +39,31 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className={`container thisisok`}>
-        <div>{count}</div>
-        <button onClick={() => dispatch(increment())}>+</button>
-        <button onClick={() => dispatch(decrement())}>-</button>
+      <Categories/>
+      {
+        // <div className={`container thisisok`}>
+        //   <div>{count}</div>
+        //   <button onClick={() => dispatch(increment())}>+</button>
+        //   <button onClick={() => dispatch(decrement())}>-</button>
 
-        <h1 className={styles.title}>morbi interdum</h1>
+        //   <h1 className={styles.title}>morbi interdum</h1>
 
-        {!session && (
-          <>
-            Not signed in <br />
-            <button className="btn btn--1" onClick={() => signIn()}>Sign In</button>
-          </>
-        )}
-        {session && (
-          <>
-            Signed in as {session.user.email} <br />
-            <button onClick={() => signOut()}>Sign out</button>
-          </>
-        )}
-      </div>
-
+        //   {!session && (
+        //     <>
+        //       Not signed in <br />
+        //       <button className="btn btn--1" onClick={() => signIn()}>
+        //         Sign In
+        //       </button>
+        //     </>
+        //   )}
+        //   {session && (
+        //     <>
+        //       Signed in as {session.user.email} <br />
+        //       <button onClick={() => signOut()}>Sign out</button>
+        //     </>
+        //   )}
+        // </div>
+      }
     </div>
   );
 }
