@@ -1,12 +1,22 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
-import jpgHero from "../../public/assets/home/desktop/image-hero.jpg";
+import jpgHeroDesktop from "../../public/assets/home/desktop/image-hero.jpg";
+import jpgHeroTab from "../../public/assets/home/tablet/image-header.jpg";
+
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.background}>
-        <Image src={jpgHero} layout="fill" />
+        <Image
+          src={jpgHeroTab}
+          alt={`headphones`}
+          layout="fill"
+          quality={100}
+          priority
+          loading="eager"
+          placeholder={`blur`}
+        />
       </div>
       <div className={`container`}>
         <div className={styles.content}>
